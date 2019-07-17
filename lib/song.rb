@@ -16,6 +16,9 @@ class Song
   
   def self.genres 
     @@genres = []
+    if !@genre.include?(genre) 
+      @@genres << @genre
+    end 
     
   end 
 end 
